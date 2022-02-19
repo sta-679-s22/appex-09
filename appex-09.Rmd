@@ -1,0 +1,19 @@
+---
+title: "Appex 09 - Propensity Scores"
+output: html_document
+date: '2022-02-19'
+---
+
+```{r}
+# uncomment the lines below and run them once in the console to install packages
+# install.packages("causaldata")
+# install.packages("broom")
+library(causaldata)
+library(broom)
+library(tidyverse)
+```
+
+```{r, eval = FALSE}
+nhefs_complete_uc <- nhefs_complete %>% 
+  filter(censored == 0)
+```
